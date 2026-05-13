@@ -17,7 +17,7 @@ export default function App() {
       title: "Dockerized Multi-Tier Application",
       desc: "Containerized Flask and MySQL application ensuring consistent and scalable deployment.",
       tech: "Docker • Flask • MySQL",
-      link: "https://github.com/Usman-Ghani-Devops/flask_mysql_tier_app",
+      link: "https://github.com/Usman-Ghani-Devops/Docker-Projects.git",
     },
     {
       title: "Sales Data Analysis Project",
@@ -182,7 +182,7 @@ export default function App() {
           Open to DevOps & Data Analytics Internship Opportunities
         </p>
 
-        <p className="text-gray-300">Email: your@email.com</p>
+        <p className="text-gray-300">Email: usman328ghani@gmail.com</p>
       </section>
 
 
