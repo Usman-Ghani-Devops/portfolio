@@ -2,28 +2,40 @@ export default function App() {
 
   const projects = [
     {
-      title: "Production Server Outage Diagnostics Tool",
-      desc: "An automated Linux-based troubleshooting system that diagnoses server failures, monitors active services, and analyzes network connectivity logs.",
-      tech: "Linux • Bash • Networking • System Logs",
-      link: "https://github.com/Usman-Ghani-Devops/Simulate_Production_Outage",
+      title: "Automated Service Recovery & Diagnostic Suite",
+      desc: "A comprehensive Linux automation suite that monitors system services, performs health checks, and automatically restarts failed services to minimize downtime.",
+      tech: "Bash • Systemd • Linux Automation",
+      link: "https://github.com/Usman-Ghani-Devops/Automated-Service-Recovery-and-Diagnostic-Suite",
+    },
+    {
+      title: "Network Connectivity Troubleshooter",
+      desc: "A tool designed to automate network diagnostics, checking DNS resolution, gateway connectivity, and external port accessibility to identify network bottlenecks.",
+      tech: "Networking • Bash • TCP/IP • Linux",
+      link: "https://github.com/Usman-Ghani-Devops/Network-Connectivity-Troubleshooter",
+    },
+    {
+      title: "Firewall Audit & Security Tool",
+      desc: "A security script that audits Linux firewall rules (iptables/ufw), identifies open ports, and ensures the system adheres to basic security hardening policies.",
+      tech: "Linux Security • Firewall • Bash",
+      link: "https://github.com/Usman-Ghani-Devops/Firewall_Audit_tool",
+    },
+    {
+      title: "Disk Space Incident Simulator",
+      desc: "Simulates critical disk space exhaustion scenarios to test monitoring alerts and automated cleanup scripts in a production-like environment.",
+      tech: "Linux Administration • Monitoring • Bash",
+      link: "https://github.com/Usman-Ghani-Devops/Disk-Space-Incident-Simulator",
+    },
+    {
+      title: "Docker Infrastructure Projects",
+      desc: "A collection of containerization projects focusing on custom Dockerfiles, multi-stage builds, and managing multi-container environments using Docker Compose.",
+      tech: "Docker • Docker-Compose • Containerization",
+      link: "https://github.com/Usman-Ghani-Devops/Docker-Projects",
     },
     {
       title: "Multi-Server Infrastructure Audit",
-      desc: "A centralized automation script designed to perform security configuration audits and health checks across multiple remote Linux servers simultaneously via SSH.",
-      tech: "SSH • Bash • Linux Security • Automation",
+      desc: "Centralized automation for performing simultaneous health and security checks across multiple remote Linux nodes via SSH keys.",
+      tech: "SSH • Remote Automation • Linux • Bash",
       link: "https://github.com/Usman-Ghani-Devops/Multi-Server-Infrastructure-Audit",
-    },
-    {
-      title: "Dockerized Multi-Tier Application",
-      desc: "Containerized a Flask web application with a MySQL database backend using custom Dockerfiles to ensure seamless communication between service tiers.",
-      tech: "Docker • Docker-Compose • MySQL • Flask",
-      link: "https://github.com/Usman-Ghani-Devops/flask_mysql_tier_app",
-    },
-    {
-      title: "SSH Intrusion Detection System",
-      desc: "A security monitoring tool that analyzes failed authentication attempts in system logs and automatically flags suspicious IP addresses.",
-      tech: "Bash • Linux Security • Log Analysis",
-      link: "https://github.com/Usman-Ghani-Devops/SSH-Intrusion-Detection-Project",
     }
   ];
 
@@ -33,7 +45,7 @@ export default function App() {
       {/* HERO SECTION */}
       <section className="px-6 md:px-24 py-28 text-center flex flex-col items-center">
         
-        {/* --- THIS IS THE PHOTO CODE --- */}
+        {/* Profile Pic */}
         <div className="mb-8">
           <img 
             src="/profile.png" 
@@ -41,17 +53,16 @@ export default function App() {
             className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-cyan-500 shadow-lg shadow-cyan-500/20 object-cover"
           />
         </div>
-        {/* ------------------------------ */}
 
-        <h1 className="text-5xl md:text-6xl font-bold mb-6">Usman Ghani</h1>
-        <p className="text-xl text-cyan-400 mb-6 font-medium text-balance">
+        <h1 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight">Usman Ghani</h1>
+        <p className="text-xl text-cyan-400 mb-6 font-medium">
           Software Engineering Student | DevOps & Cloud Enthusiast
         </p>
 
         <p className="text-gray-400 max-w-3xl mx-auto leading-relaxed mb-10 text-balance">
           BS Software Engineering student at University of the Punjab (2024–2028) with CGPA 3.64. 
-          Specializing in Infrastructure Automation, Linux Systems, and Containerization. 
-          Currently focusing on AWS Cloud Fundamentals and building resilient DevOps solutions.
+          Specializing in **Infrastructure Automation**, **Linux Security**, and **Cloud Fundamentals**. 
+          Passionate about building resilient systems and automating manual workflows.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
@@ -90,17 +101,17 @@ export default function App() {
             <ul className="text-gray-400 space-y-2">
               <li>Bash / Shell Scripting</li>
               <li>Git & GitHub Workflows</li>
-              <li>System Monitoring</li>
-              <li>Networking Basics</li>
+              <li>Network Troubleshooting</li>
+              <li>Security Auditing</li>
             </ul>
           </div>
           <div className="bg-slate-900 p-6 rounded-2xl border border-gray-800 shadow-xl">
-            <h3 className="font-bold text-white mb-4 border-b border-cyan-500 pb-2">Problem Solving</h3>
+            <h3 className="font-bold text-white mb-4 border-b border-cyan-500 pb-2">Software Eng.</h3>
             <ul className="text-gray-400 space-y-2">
               <li>Data Structures & Algorithms</li>
-              <li>C++ / Python Programming</li>
+              <li>C++ / Python / SQL</li>
               <li>90+ LeetCode Solved</li>
-              <li>Technical Debugging</li>
+              <li>Data Analytics (Pandas/NumPy)</li>
             </ul>
           </div>
         </div>
@@ -108,15 +119,17 @@ export default function App() {
 
       {/* PROJECTS SECTION */}
       <section id="projects" className="px-6 md:px-24 py-20">
-        <h2 className="text-3xl font-bold text-center mb-12 text-cyan-400 text-balance">Infrastructure & Cloud Projects</h2>
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-12 text-cyan-400">DevOps & Infrastructure Projects</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {projects.map((p) => (
-            <div key={p.title} className="bg-slate-900 p-8 rounded-2xl border border-gray-800 hover:border-cyan-500 transition-all group shadow-lg">
-              <h3 className="text-xl font-bold mb-3 group-hover:text-cyan-400 transition">{p.title}</h3>
-              <p className="text-gray-400 mb-4 text-sm leading-relaxed">{p.desc}</p>
-              <div className="text-cyan-500 text-xs font-mono mb-6 uppercase tracking-wider">{p.tech}</div>
-              <a href={p.link} target="_blank" className="inline-flex items-center text-sm font-semibold text-white hover:text-cyan-400 transition">
-                VIEW REPOSITORY <span className="ml-2">→</span>
+            <div key={p.title} className="bg-slate-900 p-6 rounded-2xl border border-gray-800 hover:border-cyan-500 transition-all group flex flex-col justify-between">
+              <div>
+                <h3 className="text-lg font-bold mb-3 group-hover:text-cyan-400 transition leading-tight">{p.title}</h3>
+                <p className="text-gray-400 mb-4 text-sm leading-relaxed">{p.desc}</p>
+                <div className="text-cyan-500 text-[10px] font-mono mb-6 uppercase tracking-wider">{p.tech}</div>
+              </div>
+              <a href={p.link} target="_blank" className="inline-flex items-center text-xs font-bold text-white hover:text-cyan-400 transition uppercase tracking-widest">
+                Explore Repo <span className="ml-2 text-lg">→</span>
               </a>
             </div>
           ))}
@@ -128,7 +141,7 @@ export default function App() {
         <h2 className="text-3xl font-bold mb-8 text-cyan-400">Academic Background</h2>
         <div className="inline-block bg-slate-900 p-8 rounded-3xl border border-gray-800 shadow-2xl">
           <h3 className="text-xl font-bold">BS Software Engineering</h3>
-          <p className="text-gray-400 mt-2">University of the Punjab (2024 – 2028)</p>
+          <p className="text-gray-400 mt-2 font-medium">University of the Punjab (2024 – 2028)</p>
           <div className="mt-4 inline-block px-4 py-1 bg-cyan-500/10 text-cyan-400 rounded-full border border-cyan-500/20 font-bold font-mono text-sm">
             Current CGPA: 3.64 / 4.00
           </div>
@@ -137,10 +150,10 @@ export default function App() {
 
       {/* FOOTER */}
       <footer className="py-12 text-center border-t border-gray-800">
-        <p className="text-gray-500 text-sm uppercase tracking-widest">Available for DevOps & Cloud Internships</p>
+        <p className="text-gray-500 text-xs uppercase tracking-widest">Available for DevOps & Cloud Internships</p>
         <p className="text-gray-300 mt-3 font-semibold text-lg">usman328ghani@gmail.com</p>
         <div className="mt-8 text-gray-600 text-[10px] uppercase tracking-tighter">
-          © {new Date().getFullYear()} Usman Ghani • React + Tailwind CSS
+          © {new Date().getFullYear()} Usman Ghani • React • Tailwind CSS
         </div>
       </footer>
 
