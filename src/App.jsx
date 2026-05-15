@@ -85,6 +85,16 @@ export default function App() {
       </section>
 
 
+      {/* PROFILE IMAGE */}
+<div className="mb-8">
+  <img 
+    src="/profile.png"      {/* <--- Change this from .jpg to .png */}
+    alt="Usman Ghani" 
+    className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-cyan-500 shadow-lg shadow-cyan-500/20 object-cover mx-auto"
+  />
+</div>
+      
+
       {/* SKILLS */}
       <section className="px-6 md:px-20 py-20 border-t border-b border-gray-800">
         <h3 className="text-3xl font-bold text-center mb-12 text-cyan-400">
