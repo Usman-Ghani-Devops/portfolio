@@ -150,7 +150,6 @@ export default function App() {
 
       {/* FOOTER */}
       <footer className="py-12 text-center border-t border-gray-800">
-        <p className="text-gray-500 text-xs uppercase tracking-widest">Available for DevOps & Cloud Internships</p>
         <p className="text-gray-300 mt-3 font-semibold text-lg">usman328ghani@gmail.com</p>
         <div className="mt-8 text-gray-600 text-[10px] uppercase tracking-tighter">
           © {new Date().getFullYear()} Usman Ghani • React • Tailwind CSS
